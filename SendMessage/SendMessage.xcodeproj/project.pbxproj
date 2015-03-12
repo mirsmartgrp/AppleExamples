@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44EA3891AB1A50C002FA051 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44EA3881AB1A50C002FA051 /* InterfaceController.swift */; };
+		E44EA38B1AB1A50C002FA051 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44EA38A1AB1A50C002FA051 /* NotificationController.swift */; };
+		E44EA38D1AB1A50C002FA051 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44EA38C1AB1A50C002FA051 /* Images.xcassets */; };
+		E44EA3911AB1A50C002FA051 /* SendMessage WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = E44EA3901AB1A50C002FA051 /* SendMessage WatchKit App.app */; };
+		E44EA3991AB1A50C002FA051 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44EA3971AB1A50C002FA051 /* Interface.storyboard */; };
+		E44EA39B1AB1A50C002FA051 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44EA39A1AB1A50C002FA051 /* Images.xcassets */; };
+		E44EA39E1AB1A50C002FA051 /* SendMessage WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E44EA3831AB1A50C002FA051 /* SendMessage WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E45058BA1AB08CB300D060B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45058B91AB08CB300D060B9 /* AppDelegate.swift */; };
 		E45058BC1AB08CB300D060B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45058BB1AB08CB300D060B9 /* ViewController.swift */; };
 		E45058BF1AB08CB300D060B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45058BD1AB08CB300D060B9 /* Main.storyboard */; };
@@ -16,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E44EA3921AB1A50C002FA051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E45058AC1AB08CB300D060B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E44EA38F1AB1A50C002FA051;
+			remoteInfo = "SendMessage WatchKit App";
+		};
+		E44EA39C1AB1A50C002FA051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E45058AC1AB08CB300D060B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E44EA3821AB1A50C002FA051;
+			remoteInfo = "SendMessage WatchKit Extension";
+		};
 		E45058CA1AB08CB300D060B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E45058AC1AB08CB300D060B9 /* Project object */;
@@ -25,7 +46,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E44EA3A51AB1A50C002FA051 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E44EA39E1AB1A50C002FA051 /* SendMessage WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E44EA3831AB1A50C002FA051 /* SendMessage WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SendMessage WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44EA3861AB1A50C002FA051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44EA3871AB1A50C002FA051 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E44EA3881AB1A50C002FA051 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E44EA38A1AB1A50C002FA051 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E44EA38C1AB1A50C002FA051 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E44EA3901AB1A50C002FA051 /* SendMessage WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendMessage WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44EA3961AB1A50C002FA051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44EA3981AB1A50C002FA051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E44EA39A1AB1A50C002FA051 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E45058B41AB08CB300D060B9 /* SendMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45058B81AB08CB300D060B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45058B91AB08CB300D060B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +84,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E44EA3801AB1A50C002FA051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E45058B11AB08CB300D060B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +108,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44EA3841AB1A50C002FA051 /* SendMessage WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E44EA3881AB1A50C002FA051 /* InterfaceController.swift */,
+				E44EA38A1AB1A50C002FA051 /* NotificationController.swift */,
+				E44EA38C1AB1A50C002FA051 /* Images.xcassets */,
+				E44EA3851AB1A50C002FA051 /* Supporting Files */,
+			);
+			path = "SendMessage WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E44EA3851AB1A50C002FA051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E44EA3861AB1A50C002FA051 /* Info.plist */,
+				E44EA3871AB1A50C002FA051 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E44EA3941AB1A50C002FA051 /* SendMessage WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E44EA3971AB1A50C002FA051 /* Interface.storyboard */,
+				E44EA39A1AB1A50C002FA051 /* Images.xcassets */,
+				E44EA3951AB1A50C002FA051 /* Supporting Files */,
+			);
+			path = "SendMessage WatchKit App";
+			sourceTree = "<group>";
+		};
+		E44EA3951AB1A50C002FA051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E44EA3961AB1A50C002FA051 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E45058AB1AB08CB300D060B9 = {
 			isa = PBXGroup;
 			children = (
 				E45058B61AB08CB300D060B9 /* SendMessage */,
 				E45058CC1AB08CB300D060B9 /* SendMessageTests */,
+				E44EA3841AB1A50C002FA051 /* SendMessage WatchKit Extension */,
+				E44EA3941AB1A50C002FA051 /* SendMessage WatchKit App */,
 				E45058B51AB08CB300D060B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +162,8 @@
 			children = (
 				E45058B41AB08CB300D060B9 /* SendMessage.app */,
 				E45058C91AB08CB300D060B9 /* SendMessageTests.xctest */,
+				E44EA3831AB1A50C002FA051 /* SendMessage WatchKit Extension.appex */,
+				E44EA3901AB1A50C002FA051 /* SendMessage WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +209,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E44EA3821AB1A50C002FA051 /* SendMessage WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44EA3A41AB1A50C002FA051 /* Build configuration list for PBXNativeTarget "SendMessage WatchKit Extension" */;
+			buildPhases = (
+				E44EA37F1AB1A50C002FA051 /* Sources */,
+				E44EA3801AB1A50C002FA051 /* Frameworks */,
+				E44EA3811AB1A50C002FA051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E44EA3931AB1A50C002FA051 /* PBXTargetDependency */,
+			);
+			name = "SendMessage WatchKit Extension";
+			productName = "SendMessage WatchKit Extension";
+			productReference = E44EA3831AB1A50C002FA051 /* SendMessage WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		E44EA38F1AB1A50C002FA051 /* SendMessage WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44EA3A31AB1A50C002FA051 /* Build configuration list for PBXNativeTarget "SendMessage WatchKit App" */;
+			buildPhases = (
+				E44EA38E1AB1A50C002FA051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SendMessage WatchKit App";
+			productName = "SendMessage WatchKit App";
+			productReference = E44EA3901AB1A50C002FA051 /* SendMessage WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		E45058B31AB08CB300D060B9 /* SendMessage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E45058D31AB08CB300D060B9 /* Build configuration list for PBXNativeTarget "SendMessage" */;
@@ -122,10 +249,12 @@
 				E45058B01AB08CB300D060B9 /* Sources */,
 				E45058B11AB08CB300D060B9 /* Frameworks */,
 				E45058B21AB08CB300D060B9 /* Resources */,
+				E44EA3A51AB1A50C002FA051 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E44EA39D1AB1A50C002FA051 /* PBXTargetDependency */,
 			);
 			name = SendMessage;
 			productName = SendMessage;
@@ -159,6 +288,12 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Ron Gebauer";
 				TargetAttributes = {
+					E44EA3821AB1A50C002FA051 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E44EA38F1AB1A50C002FA051 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					E45058B31AB08CB300D060B9 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -183,11 +318,31 @@
 			targets = (
 				E45058B31AB08CB300D060B9 /* SendMessage */,
 				E45058C81AB08CB300D060B9 /* SendMessageTests */,
+				E44EA3821AB1A50C002FA051 /* SendMessage WatchKit Extension */,
+				E44EA38F1AB1A50C002FA051 /* SendMessage WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E44EA3811AB1A50C002FA051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44EA3911AB1A50C002FA051 /* SendMessage WatchKit App.app in Resources */,
+				E44EA38D1AB1A50C002FA051 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44EA38E1AB1A50C002FA051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44EA3991AB1A50C002FA051 /* Interface.storyboard in Resources */,
+				E44EA39B1AB1A50C002FA051 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E45058B21AB08CB300D060B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,6 +363,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E44EA37F1AB1A50C002FA051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44EA38B1AB1A50C002FA051 /* NotificationController.swift in Sources */,
+				E44EA3891AB1A50C002FA051 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E45058B01AB08CB300D060B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +392,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E44EA3931AB1A50C002FA051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E44EA38F1AB1A50C002FA051 /* SendMessage WatchKit App */;
+			targetProxy = E44EA3921AB1A50C002FA051 /* PBXContainerItemProxy */;
+		};
+		E44EA39D1AB1A50C002FA051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E44EA3821AB1A50C002FA051 /* SendMessage WatchKit Extension */;
+			targetProxy = E44EA39C1AB1A50C002FA051 /* PBXContainerItemProxy */;
+		};
 		E45058CB1AB08CB300D060B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E45058B31AB08CB300D060B9 /* SendMessage */;
@@ -236,6 +410,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E44EA3971AB1A50C002FA051 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E44EA3981AB1A50C002FA051 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		E45058BD1AB08CB300D060B9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +437,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E44EA39F1AB1A50C002FA051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SendMessage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E44EA3A01AB1A50C002FA051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SendMessage WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E44EA3A11AB1A50C002FA051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = SendMessage_WatchKit_Extension;
+				INFOPLIST_FILE = "SendMessage WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		E44EA3A21AB1A50C002FA051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SendMessage_WatchKit_Extension;
+				INFOPLIST_FILE = "SendMessage WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		E45058D11AB08CB300D060B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -336,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendMessage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,6 +627,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E44EA3A31AB1A50C002FA051 /* Build configuration list for PBXNativeTarget "SendMessage WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44EA3A11AB1A50C002FA051 /* Debug */,
+				E44EA3A21AB1A50C002FA051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E44EA3A41AB1A50C002FA051 /* Build configuration list for PBXNativeTarget "SendMessage WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44EA39F1AB1A50C002FA051 /* Debug */,
+				E44EA3A01AB1A50C002FA051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E45058AF1AB08CB300D060B9 /* Build configuration list for PBXProject "SendMessage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -405,6 +659,7 @@
 				E45058D51AB08CB300D060B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45058D61AB08CB300D060B9 /* Build configuration list for PBXNativeTarget "SendMessageTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +668,7 @@
 				E45058D81AB08CB300D060B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
