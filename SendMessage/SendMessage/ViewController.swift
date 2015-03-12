@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var messageToSend: UITextView!
+	
+	@IBAction func sendMessage(sender: AnyObject) {
+		let message : String = messageToSend!.text;
+		
+		println(message);
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.

@@ -33,12 +33,19 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Pd5-0N-jLR"/>
-                        <barButtonItem title="Send" id="qq5-WA-Ufb"/>
+                        <barButtonItem title="Send" id="qq5-WA-Ufb">
+                            <connections>
+                                <action selector="sendMessage:" destination="vXZ-lx-hvc" id="aSe-lq-hZE"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="x3N-lr-gWF"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Send a message to your Watch." id="BaD-uR-guX"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="messageToSend" destination="0sw-k5-OI6" id="9yq-VJ-izH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
