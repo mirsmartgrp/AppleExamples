@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 	@IBAction func sendMessage(sender: AnyObject) {
 		let message : String = messageToSend!.text;
 		
-		println(message);
+		messageToSend!.text = "Dies möchte ich senden:" + message;
 	}
 	
 	override func viewDidLoad() {
