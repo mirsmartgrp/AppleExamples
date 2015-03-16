@@ -13,9 +13,12 @@ class ViewController: UIViewController {
 	@IBOutlet weak var messageToSend: UITextView!
 	
 	@IBAction func sendMessage(sender: AnyObject) {
-		let message : String = messageToSend!.text;
+		var message:String = messageToSend!.text
 		
-		messageToSend!.text = "Dies möchte ich senden:" + message;
+		var localNotification:UILocalNotification = UILocalNotification()
+		localNotification.alertBody = message
+		localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+		UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
 	}
 	
 	override func viewDidLoad() {

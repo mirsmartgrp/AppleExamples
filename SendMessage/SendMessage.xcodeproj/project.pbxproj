@@ -20,6 +20,7 @@
 		E45058C11AB08CB300D060B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45058C01AB08CB300D060B9 /* Images.xcassets */; };
 		E45058C41AB08CB300D060B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45058C21AB08CB300D060B9 /* LaunchScreen.xib */; };
 		E45058D01AB08CB300D060B9 /* SendMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45058CF1AB08CB300D060B9 /* SendMessageTests.swift */; };
+		E484C8CA1AB6E37E001D5F31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45058BD1AB08CB300D060B9 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -338,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E484C8CA1AB6E37E001D5F31 /* Main.storyboard in Resources */,
 				E44EA3991AB1A50C002FA051 /* Interface.storyboard in Resources */,
 				E44EA39B1AB1A50C002FA051 /* Images.xcassets in Resources */,
 			);
@@ -634,6 +636,7 @@
 				E44EA3A21AB1A50C002FA051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E44EA3A41AB1A50C002FA051 /* Build configuration list for PBXNativeTarget "SendMessage WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +645,7 @@
 				E44EA3A01AB1A50C002FA051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45058AF1AB08CB300D060B9 /* Build configuration list for PBXProject "SendMessage" */ = {
 			isa = XCConfigurationList;
