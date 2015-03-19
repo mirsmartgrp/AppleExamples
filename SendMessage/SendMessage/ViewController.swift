@@ -10,15 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	@IBOutlet weak var messageToSend: UITextView!
+	@IBOutlet var textArea: UITextView!
+	
+	@IBAction func clearTextArea(sender: AnyObject) {
+		textArea!.text = ""
+	}
 	
 	@IBAction func sendMessage(sender: AnyObject) {
-		var message:String = messageToSend!.text
+		var message:String = textArea!.text
 		
 		var localNotification:UILocalNotification = UILocalNotification()
 		localNotification.alertBody = message
 		localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
 		UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+		
+		message = ""
+		textArea!.text = ""
 	}
 	
 	override func viewDidLoad() {

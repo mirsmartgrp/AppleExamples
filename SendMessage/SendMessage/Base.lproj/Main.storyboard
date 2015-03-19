@@ -8,29 +8,13 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController title="SendMessage" id="vXZ-lx-hvc" customClass="ViewController" customModule="SendMessage" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <textView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" id="NEu-DH-xd3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" text="Test" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="0sw-k5-OI6">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="0sw-k5-OI6" secondAttribute="bottom" id="41g-fI-bzy"/>
-                            <constraint firstItem="0sw-k5-OI6" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="SQL-x8-XbB"/>
-                            <constraint firstItem="0sw-k5-OI6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="deG-QQ-Zqz"/>
-                            <constraint firstAttribute="trailing" secondItem="0sw-k5-OI6" secondAttribute="trailing" id="i01-xP-bhs"/>
-                        </constraints>
-                    </view>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Pd5-0N-jLR"/>
                         <barButtonItem title="Send" id="qq5-WA-Ufb">
@@ -40,11 +24,17 @@
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="x3N-lr-gWF"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Send a message to your Watch." id="BaD-uR-guX"/>
+                    <navigationItem key="navigationItem" title="Send a message to your Watch." id="BaD-uR-guX">
+                        <barButtonItem key="rightBarButtonItem" title="Clear" id="M7K-pZ-SV5">
+                            <connections>
+                                <action selector="clearTextArea:" destination="vXZ-lx-hvc" id="fUB-aB-kbq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="messageToSend" destination="0sw-k5-OI6" id="9yq-VJ-izH"/>
+                        <outlet property="textArea" destination="NEu-DH-xd3" id="MTr-cM-BbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
